@@ -1,5 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
+require('dotenv').config();
 
 async function searchRecipes() {
   const axios = require('axios');
@@ -13,7 +14,7 @@ async function searchRecipes() {
       tags: 'under_30_minutes'
     },
     headers: {
-      'X-RapidAPI-Key': '4b2f9af31amsh37dc3b5ad23d82cp163b22jsn5e76c9c5afbc',
+      'X-RapidAPI-Key': process.env.RAPIDAPIKEY,
       'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
     }
   };
