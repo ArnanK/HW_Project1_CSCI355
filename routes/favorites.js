@@ -8,7 +8,8 @@ router.use((req, res, next) => {
 })
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'pages', 'recipes.html'));
+    res.sendFile(path.join(__dirname, '../public', 'pages', 'favorites.html'));
 })
+
 
 module.exports = router;

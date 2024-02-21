@@ -1,11 +1,12 @@
 const search = document.querySelector('.search')
 const btn = document.querySelector('.btn')
 const input = document.querySelector('.input')
+const form = document.getElementById('searchForm');
 
-btn.addEventListener('click', ()=>{
+
+btn.addEventListener('mouseover', ()=>{
     if(search.classList.contains('active')){
-        //implement search functionality
-        console.log("OTIS")
+        console.log('Search bar is active')
     }else{
         search.classList.add('active')
     }
