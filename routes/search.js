@@ -1,19 +1,21 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
+const searchRecipes = require(path.join(__dirname, '../utils', 'searchRecipes.js'));
+
 
 router.use((req, res, next) => {
     console.log('Time: ', Date.now());
     next();
 })
 
-/* This code snippet is defining a route handler for a GET request to the root URL ('/'). When a GET
+/* Route handler for a GET request to the root URL ('/'). When a GET
 request is made to the root URL, the handler function is executed. */
-//Dynamically rendered from the views
-router.get('/', (req, res, next) => {
+//Dynamically rendered from the views/search.ejs
+router.get('/', async (req, res) => {
     reqQuery = req.query.query
-    res.render("search", {reqQuery:reqQuery})
-    //res.sendFile(path.join(__dirname, '../public', 'pages', 'search.html'));
+    const result = await searchRecipes(reqQuery)
+    res.render("search", {reqQuery:result})
 })
 
 
