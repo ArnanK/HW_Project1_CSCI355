@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-console.log(__dirname)
 
 router.use((req, res, next) => {
     console.log('Time: ', Date.now());

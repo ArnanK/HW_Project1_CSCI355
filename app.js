@@ -2,18 +2,33 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const path = require('path');
-const index = require(path.join(__dirname, 'routes', 'index'));
-const contact = require(path.join(__dirname, 'routes', 'contact'));
-const about = require(path.join(__dirname, 'routes', 'about'));
-const recipes = require(path.join(__dirname, 'routes', 'recipes'));
+const fs = require('fs');
+const morgan = require('morgan');
+
+initRoutesFromFolder('routes');
 
 app.use(express.static('public'));
-
-app.use('/index', index);
-app.use('/contact', contact);
-app.use('/about', about);
-app.use('/recipes', recipes);
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms :date[clf]'));
 
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 })
+
+function initRoutesFromFolder(folder) {
+    const directory = path.join(__dirname, folder);
+
+    fs.readdir(directory, (err, files) => {
+        if (err) {
+            console.log('Error retrieving directory information', err);
+            return
+        } else {
+            files.forEach(file => {
+                if(!file.endsWith('.js')) return
+                const routeName = file.replace('.js', '');
+                const route = require(path.join(directory, file));
+                app.use(`/${routeName}`, route);
+            })
+        }
+    })    
+}
+

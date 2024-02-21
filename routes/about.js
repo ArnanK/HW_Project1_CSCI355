@@ -4,6 +4,7 @@ const path = require('path');
 
 router.use((res, req, next) => {
     console.log('Time: ', Date.now());
+    next();
 })
 
 router.get('/', (req, res) => {
