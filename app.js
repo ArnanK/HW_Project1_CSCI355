@@ -6,30 +6,23 @@ const app = express();
 const port = 3000;
 const path = require('path');
 const morgan = require('morgan');
+const fs = require('fs');
 
 app.set('view engine', 'ejs');
-
-//Aquires Modules from routes directory
-const index = require(path.join(__dirname, 'routes', 'index'));
-const contact = require(path.join(__dirname, 'routes', 'contact'));
-const about = require(path.join(__dirname, 'routes', 'about'));
-const search = require(path.join(__dirname, 'routes', 'search'));
-const favorites = require(path.join(__dirname, 'routes', 'favorites'));
-
-
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :date[clf]'))
+
+initRoutesFromFolder('routes')
 
 //Include this to use public static features such as CSS, JS, HTML | Allows client side files to be served at the server
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-/* The code snippet `app.use('/', index); app.use('/contact', contact); app.use('/about', about);
-app.use('/search', search);` is setting up routes for different paths in the Express application. */
-app.use('/', index);
-app.use('/contact', contact);
-app.use('/about', about);
-app.use('/search', search);
-app.use('/favorites', favorites)
+
+// app.use('/', index);
+// app.use('/contact', contact);
+// app.use('/about', about);
+// app.use('/search', search);
+// app.use('/favorites', favorites)
 
 
 /* The code `app.listen(port, () => {
@@ -53,10 +46,13 @@ function initRoutesFromFolder(folder) {
             files.forEach(file => {
                 if(!file.endsWith('.js')) return
                 const routeName = file.replace('.js', '');
+                //Aquires Modules from routes directory
                 const route = require(path.join(directory, file));
-                app.use(`/${routeName}`, route);
+                /* Setting up routes for different paths in the Express application. */
+                if (routeName === 'index') app.use('/', route);
+                else app.use(`/${routeName}`, route);
             })
         }
-    })    
+    })
+    console.log('Routes initialized successfully...');
 }
-
