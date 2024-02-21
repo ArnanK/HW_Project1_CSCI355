@@ -12,19 +12,21 @@
     <body>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Our Favorites</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="favorites">Our Favorites</a></li>
             </ul>
             <div class="search">
-                <input type="text" class="input" placeholder="Search...">
-                <button class="btn">
-                    <i class="fa fa-search"></i>
-                </button>
+                <form action="/search" method="GET">
+                    <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
+                    <button class="btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
         </nav>
         
-        <div class="content"></div>
+        <div class="content">Home Page</div>
         
         <footer>
             <p>Powered by Tasty API</p>
