@@ -16,15 +16,6 @@ initRoutesFromFolder('routes')
 //Include this to use public static features such as CSS, JS, HTML | Allows client side files to be served at the server
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-// app.use('/', index);
-// app.use('/contact', contact);
-// app.use('/about', about);
-// app.use('/search', search);
-// app.use('/favorites', favorites)
-
-
 /* The code `app.listen(port, () => {
     console.log(`Server is listening on port `);
 })` is starting the Express application server to listen on a specific port. When a client makes a

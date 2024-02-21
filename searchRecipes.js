@@ -29,12 +29,13 @@ async function searchRecipes() {
 
     recipes.forEach(recipe => {
       if (healthyRecipes.length === 3) throw BreakException
-      if (recipe.keywords && recipe.keywords.includes("healthy")) {
+      if (recipe.keywords && recipe.keywords.includes("") && recipe.name) {
         healthyRecipes.push(recipe)
+        console.log(recipe.name)
       }
     });
 
-    console.log(healthyRecipes)
+    // console.log(healthyRecipes)
     // const dataStr = JSON.stringify(recipes, null, 2);
 
     // fs.writeFile('recipes.json', dataStr, (err) => {
