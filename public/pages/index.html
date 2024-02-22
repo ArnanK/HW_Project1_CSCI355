@@ -3,33 +3,53 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheets/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <nav>
+            <a href="#" class="brand">
+                <img src="../image/brand_name.png" alt="Recipes">
+            </a>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="favorites">Our Favorites</a></li>
+                <li><a href=""><i class="fa-solid fa-house"></i><b>Home</b></a></li>
+                <li><a href=""><i class="fa-solid fa-circle-info"></i><b>About</b></a></li>
+                <li><a href=""><i class="fa-solid fa-heart"></i><b>Our Favorites</b></a></li>
+                <li><a href=""><i class="fa-solid fa-inbox"></i> <b>Contact</b></a></li>
             </ul>
             <div class="search">
-                <form action="/search" method="GET">
-                    <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
-                    <button class="btn">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>
+                <input type="text" class="input" placeholder="Search...">
+                <button class="btn">
+                    <i class="fa fa-search"></i>
+                </button>
             </div>
         </nav>
+
+        <!--Landing page-->
+        <section class="landingpage">
+            <div class="content">
+                <div class="heading">
+                    
+                    <h1 style="font-size: 60px;">Freshness<br> in every bite</h1>
+                    <p>Light, Fluffy, and Vegan-friendly Pancakes</p>
+                    <button>View Receipe</button>
+                </div>
+                <div class="image">
+                    <img src="../image/main.jpg" alt="" class="img">
+                </div>
+            
+            </div>
+
+        </section>
         
-        <div class="content">Home Page</div>
+        
         
         <footer>
-            <p>Powered by Tasty API</p>
+            <p>Copyright &copy; 2024 All rights reserved</p>
         </footer>
 
         <script src="../javascripts/searchBar.js" async defer></script>
