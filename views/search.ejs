@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheets/style.css">
+        <link rel="stylesheet" href="../stylesheets/recipes.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     </head>
     <body>
@@ -26,12 +27,24 @@
             </div>
         </nav>
         
-        <div class="content">
+        <h3 class="results">Results: <%= recipes.length %> </h3>
 
-            This is the search page
-            <p>
-                <%= reqQuery %>
-            </p>
+        <div class="content">
+            <div class="recipes">
+                <% for(let i=0; i < recipes.length; i++){ %>
+                    <a href="<%= recipes[i].url %>" target="_blank">
+                        <div class="card">
+                            <img src="<%= recipes[i].image %>" alt="">
+                            <div class="text">
+                                <h4><%= recipes[i].name %></h4>
+                                <h6>Calories: <%= Math.round(recipes[i].calories) %></h6>
+                                <h6>Nutrients:</h6>
+                                <h6>Protein: <%= recipes[i].protein %>g&emsp;Carbs:<%= recipes[i].carbs %>g&emsp;Fat:<%= recipes[i].fat %>g</h6>
+                            </div>
+                        </div>
+                    </a>
+                <% } %>
+            </div>
         </div>
         
         <footer>

@@ -15,7 +15,7 @@ request is made to the root URL, the handler function is executed. */
 router.get('/', async (req, res) => {
     reqQuery = req.query.query
     const result = await searchRecipes(reqQuery)
-    res.render("search", {reqQuery:result})
+    res.render("search", {recipes:result})
 })
 
 
