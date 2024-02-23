@@ -12,20 +12,21 @@
     </head>
     <body>
         <nav>
-            <a href="#" class="brand">
-                <img src="../image/brand_name.png" alt="Recipes">
+            <a href="/" class="brand">
+                <img src="../images/brand_name.png" alt="Recipes">
             </a>
             <ul>
-                <li><a href=""><i class="fa-solid fa-house"></i><b>Home</b></a></li>
-                <li><a href=""><i class="fa-solid fa-circle-info"></i><b>About</b></a></li>
-                <li><a href=""><i class="fa-solid fa-heart"></i><b>Our Favorites</b></a></li>
-                <li><a href=""><i class="fa-solid fa-inbox"></i> <b>Contact</b></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
+                <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
+                <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
             </ul>
             <div class="search">
-                <input type="text" class="input" placeholder="Search...">
-                <button class="btn">
-                    <i class="fa fa-search"></i>
-                </button>
+                <form action="/search" method="GET">
+                    <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
+                    <button class="btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
         </nav>
 
@@ -36,10 +37,10 @@
                     
                     <h1 style="font-size: 60px;">Freshness<br> in every bite</h1>
                     <p>Light, Fluffy, and Vegan-friendly Pancakes</p>
-                    <button>View Receipe</button>
+                    <a href="/search?query=pancake"><button>View Receipe</button></a>
                 </div>
                 <div class="image">
-                    <img src="../image/main.jpg" alt="" class="img">
+                    <img src="../images/main.jpg" alt="" class="img">
                 </div>
             
             </div>

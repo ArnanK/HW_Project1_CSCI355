@@ -79,7 +79,7 @@ nav > ul > li > a:hover {
 }
 
 .search .btn{
-    background-color: #D2B48C;
+    background-color: #000000;
     border: 0;
     height: 35px;
     width: 35px;
@@ -100,6 +100,9 @@ nav > ul > li > a:hover {
 .input:focus{
     outline:none;
 }
+
+/* ------------------Homepage-------------------------- */
+
 .landingpage{
     background: linear-gradient(to bottom right, #F3EFE0 50%, transparent 50%);
     background-size: cover;
@@ -166,6 +169,6 @@ footer{
     align-items: center;
     height: 70px;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
