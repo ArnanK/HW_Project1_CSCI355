@@ -139,6 +139,10 @@ nav > ul > li > a:hover {
     margin-top: -300px;
   
   }
+.heading p {
+    font-size: 24px;
+    color: #D2691E;
+}
 
   button {
     display: inline-block;
