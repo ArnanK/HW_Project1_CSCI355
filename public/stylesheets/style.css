@@ -79,7 +79,7 @@ nav > ul > li > a:hover {
 }
 
 .search .btn{
-    background-color: #000000;
+    background-color: #D2B48C;
     border: 0;
     height: 35px;
     width: 35px;
@@ -144,7 +144,7 @@ nav > ul > li > a:hover {
     color: #D2691E;
 }
 
-  button {
+.main-button {
     display: inline-block;
     padding: 7px 10px;
     font-size: 24px;
@@ -159,9 +159,96 @@ nav > ul > li > a:hover {
   }
 
   /* Hover effect */
-  button:hover {
+.main-button:hover {
     background-color: #FF8C00; 
   }
+
+
+
+.subcriber {
+    position: relative;
+    height: 100vh;
+    background-color: #F3EFE0;
+}
+
+.subscribe hr {
+    position: absolute;
+    top: 1980px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    border: none;
+    border-top: 3.5px solid  #F3EFE0;
+}
+
+.small-box {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px; 
+    height: 400px; 
+    background-color: #F3EFE0;
+    margin-top: 1200px;
+
+}
+
+.small-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.subscription-info h2 {
+    margin-left: 500px;
+
+}
+
+.subscription-info p {
+    margin-left: 550px;
+
+}
+.subscription-info form {
+    margin-left: 500px; 
+    
+}
+.input-name-label {
+    font-size: 18px; 
+    margin-bottom: 20px;
+   
+    
+}
+
+.input-email-label {
+    font-size: 18px; 
+    margin-top: 20px;
+   
+}
+
+.input-name-field{
+    font-size: 18px; 
+    padding: 8px; 
+}
+
+.input-email-field {
+    font-size: 18px; 
+    padding: 8px; 
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    width: 160px; 
+    height: 40px; 
+    border: none; 
+    margin-top: 50px; 
+    margin-left: 95px;
+}
+
+
   
   
 /* ------------------Footer--------------------------- */
@@ -171,8 +258,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 180px;
     width: 100%;
-    position: relative;
-    bottom: 0;
+    position: relative; 
+    bottom: -1800px; 
 }
