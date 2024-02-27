@@ -44,7 +44,6 @@
                 </div>
             
             </div>
-
         </section>
 
         <section class="subscribe">
@@ -55,23 +54,22 @@
                     <h2>Subscribe to get our latest recipes!</h2>
                     <p>Subscribe to get new posts in your inbox!</p>
                     <form action="/subscribe" method="post">
-                        <label for="name"class="input-name-label"><b>Name:</b></label>
-                        <input type="text" class="input-name-field"name="name" placeholder="Enter your name" required><br>
-                        <label for="email" class="input-email-label"><b>Email:</b></label>
-                        <input type="email" class="input-email-field" name="email" placeholder="Enter your email" required>
+                        <div class="field">
+                            <label for="name"class="input-name-label"><b>Name:</b></label>
+                            <input type="text" class="input-name-field"name="name" placeholder="Enter your name" required><br>
+                        </div>
+                        <div class="field">
+                            <label for="email" class="input-email-label"><b>Email:</b></label>
+                            <input type="email" class="input-email-field" name="email" placeholder="Enter your email" required>
+                        </div>
                         <button type="submit" class="subscribe-button">SUBSCRIBE</button>
                     </form>
                 </div>
-               
             </div>
-            
         </section>
-
-        
-        
         
         <footer>
-            <p>Copyright &copy; 2024 All rights reserved</p>
+            <p>Powered by Edamam API</p>
         </footer>
 
         <script src="../javascripts/searchBar.js" async defer></script>

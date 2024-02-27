@@ -39,7 +39,6 @@ async function searchRecipes(query) {
     } catch (error) {
         console.log(error);
     }
-    console.log(result)
     return result
 }
 
