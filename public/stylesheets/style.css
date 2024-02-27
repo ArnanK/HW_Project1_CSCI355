@@ -166,11 +166,21 @@ nav > ul > li > a:hover {
 
 /* ------------------SubsribeSection--------------------- */
 
+.subscribe hr {
+    width: 900px;
+    height: 3.5px; 
+    background-color: #F3EFE0; 
+    border: none; 
+    margin: 20px auto; 
+  
+    
+}
 
 .small-box{
     display: flex;
     justify-content: center;
     height: 400px;
+    margin-bottom: 30px;
     
 }
 
@@ -221,7 +231,7 @@ nav > ul > li > a:hover {
 .subscribe-button {
     background-color: black;
     color: white;
-    width: 160px; 
+    width: 150px; 
     height: 40px; 
     border: none; 
     
