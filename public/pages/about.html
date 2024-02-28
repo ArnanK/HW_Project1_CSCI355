@@ -13,14 +13,17 @@
     </head>
     <body>
         <nav>
-            <a href="/" class="brand">
-                <img src="../images/brand_name.png" alt="Recipes">
-            </a>
-            <ul>
-                <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
-                <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
-                <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
-            </ul>
+            <div class="leftNav">
+                <a href="/" class="brand">
+                    <img src="../images/brand_name.png" alt="Recipes">
+                </a>
+                <i class="fa fa-bars" id="menuButton"></i>
+                <ul id="list" class="">
+                    <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
+                    <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
+                    <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
+                </ul>
+            </div>
             <div class="search">
                 <form action="/search" method="GET">
                     <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
@@ -31,8 +34,21 @@
             </div>
         </nav>
         
-        <div class="content">About</div>
-        
+        <div class="page">
+            <div class="menu">
+                <ul>
+                    <li><a href="/"><i class="fa-solid fa-house"></i>&nbsp;<b>Home</b></a></li>
+                    <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
+                    <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
+                    <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                YO
+            </div>
+        </div>
+
         <footer>
             <p>Powered by Edamam API</p>
         </footer>

@@ -1,0 +1,152 @@
+
+/* ------------------Homepage-------------------------- */
+
+.landingpage{
+    background: linear-gradient(to bottom right, #F3EFE0 50%, transparent 50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.landingpage.content{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.landingpage.content.heading{
+    width: 100%;
+}
+
+
+.img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 600px;
+    margin-top: -300px;
+  
+  }
+.heading p {
+    font-size: 24px;
+    color: #D2691E;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    background-color:#D2B48C; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect */
+.main-button:hover {
+    background-color: #FF8C00; 
+  }
+
+
+/* ------------------SubsribeSection--------------------- */
+
+.subscribe hr {
+    width: 900px;
+    height: 3.5px; 
+    background-color: #F3EFE0; 
+    border: none; 
+    margin: 20px auto; 
+}
+
+.small-box{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.small-box h2{
+    text-align: center;
+}
+
+.small-box img {
+    height: 100%;
+    width: auto;
+
+}
+
+.small-box .subscription-info{
+    background-color: #F3EFE0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+.small-box .subscription-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-box .subscription-info .field{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.input-name-label {
+    font-size: 18px; 
+    margin-bottom: 20px;
+}
+
+.input-email-label {
+    font-size: 18px; 
+    margin-top: 20px;
+}
+
+.input-name-field{
+    font-size: 18px; 
+    padding: 8px; 
+}
+
+.input-email-field {
+    font-size: 18px; 
+    padding: 8px; 
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    width: 150px; 
+    height: 40px; 
+    border: none; 
+    
+}
+
+
+/* ------------------Mobile Navigation----------------- */
+@media (max-width: 1055px){
+    .img{
+        display: none;
+    }
+    .small-box img {
+        display: none;
+    }
+    .small-box .subscription-info{
+        width: 75%;
+    }
+    .subscribe hr {
+        width: 80%;
+    }
+
+}
+

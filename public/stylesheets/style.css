@@ -3,11 +3,15 @@
 *{
     box-sizing: border-box;
 }
+html{
+    height: 100vh;
+}
 
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: inherit;
+    width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +23,9 @@ body{
     --navbar-background:#D2B48C;
 }
 
+
 /* ------------------Navbar---------------------------- */
+
 
 nav{
     background-color: var(--navbar-background);
@@ -28,34 +34,51 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    margin-left: -70px;
+    width: 100%;
     position: sticky;
 }
 
-nav .brand img {
+.leftNav{
+    display: flex;
+    align-items: center;
+}
+
+#menuButton{
+    display: none;
+    height: 90%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.leftNav .brand img {
     width: 150px; 
     height: auto; 
     display: block; 
     margin-left: 80px;
-    
+    flex-shrink: 1;
 }
-nav>ul{ 
+.leftNav>ul{ 
     display: flex;
+    flex-shrink: 2;
     list-style: none;
-    margin: 0;
+    margin:0;
+    padding: 0;
 }
-nav>ul>li{
+
+
+.leftNav>ul>li{
     margin: 0 10px;
 }
 
-nav>ul>li>a{
+.leftNav>ul>li>a{
     color: inherit;
     text-decoration: none;
     transition: background-color 0.3s ease; 
     padding: 10px 15px; 
+    
 }
 
-nav > ul > li > a:hover {
+.leftNav > ul > li > a:hover {
     background-color: var(--navbar-hover-color);
 }
 
@@ -69,7 +92,6 @@ nav > ul > li > a:hover {
     width: 35px;
     position: absolute;
     transition: width 0.3s ease-out, transform 0.3s ease-out; 
-
 }
 
 /*Class added in js */
@@ -89,11 +111,10 @@ nav > ul > li > a:hover {
     border-radius: 0;
 }
 
+
 .search .btn:hover{
-    background-color:#D2B48C;
-    border: 0;
-    height: 35px;
-    width: 35px;
+    background-color:#eeddc6;
+    
 }
 
 .btn:focus,
@@ -101,145 +122,50 @@ nav > ul > li > a:hover {
     outline:none;
 }
 
-/* ------------------Homepage-------------------------- */
 
-.landingpage{
-    background: linear-gradient(to bottom right, #F3EFE0 50%, transparent 50%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+/* --------------SideNavbar---------------------------- */
+.page{
+    display: flex;
+}
+
+.page .menu{
+    visibility: hidden;
+    width: 0px;
+    transition: width 0.3s ease-out
+}
+
+.page .menu.active{
+    display: flex;
+    visibility: visible;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;;
-    align-items: center;
-    padding-left: 50px;
-}
-.landingpage.content{
-    display: flex;
-    margin-top: 150px;
-    justify-content: space-around;
-    align-items: center;
-}
-.landingpage.content.heading{
-    
-    max-width: 460px;
-    width: 100%;
-}
-
-
-.landingpage .content .image {
-    margin-left: auto; 
-}
-.img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    margin-left: 600px;
-    margin-top: -300px;
-  
-  }
-.heading p {
-    font-size: 24px;
-    color: #D2691E;
-}
-
-.main-button {
-    display: inline-block;
-    padding: 7px 10px;
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    background-color:#D2B48C; 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  /* Hover effect */
-.main-button:hover {
-    background-color: #FF8C00; 
-  }
-
-
-/* ------------------SubsribeSection--------------------- */
-
-.subscribe hr {
-    width: 900px;
-    height: 3.5px; 
-    background-color: #F3EFE0; 
-    border: none; 
-    margin: 20px auto; 
-  
-    
-}
-
-.small-box{
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    margin-bottom: 30px;
-    
-}
-
-.small-box img {
-    height: 100%;
-    width: auto;
-
-}
-
-.small-box .subscription-info{
-    background-color: #F3EFE0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-}
-.small-box .subscription-info form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.small-box .subscription-info .field{
-    display: block;
-    margin-bottom: 9px;
-}
-
-.input-name-label {
-    font-size: 18px; 
-    margin-bottom: 20px;
-}
-
-.input-email-label {
-    font-size: 18px; 
-    margin-top: 20px;
-}
-
-.input-name-field{
-    font-size: 18px; 
-    padding: 8px; 
-}
-
-.input-email-field {
-    font-size: 18px; 
-    padding: 8px; 
-}
-
-.subscribe-button {
+    width: 20%;
+    padding-right: 20px;
+    position: relative;
+    z-index: 3;
     background-color: black;
     color: white;
-    width: 150px; 
-    height: 40px; 
-    border: none; 
-    
 }
 
+.page .main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
 
-  
-  
+.page ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+.page ul li{
+    margin-bottom: 10px;
+}
+.page ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
 /* ------------------Footer--------------------------- */
 footer{
     background-color: var(--footer-background);
@@ -251,4 +177,25 @@ footer{
     width: 100%;
     position: relative; 
     bottom: 0px; 
+}
+
+/* ------------------Mobile Responsive----------------- */
+@media (max-width: 1010px){
+    nav .brand{
+        display: none;
+    }
+}
+
+@media (max-width: 830px){
+    #menuButton{
+        visibility: visible;
+        display: flex;
+        margin-left: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+    .leftNav>ul{ 
+        display: none;
+    }
+
 }

@@ -7,19 +7,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheets/style.css">
+        <link rel="stylesheet" href="../stylesheets/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <nav>
-            <a href="/" class="brand">
-                <img src="../images/brand_name.png" alt="Recipes">
-            </a>
-            <ul>
-                <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
-                <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
-                <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
-            </ul>
+            <div class="leftNav">
+                <a href="/" class="brand">
+                    <img src="../images/brand_name.png" alt="Recipes">
+                </a>
+                <i class="fa fa-bars" id="menuButton"></i>
+                <ul id="list" class="">
+                    <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
+                    <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
+                    <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
+                </ul>
+            </div>
             <div class="search">
                 <form action="/search" method="GET">
                     <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
@@ -30,44 +34,56 @@
             </div>
         </nav>
 
-        <!--Landing page-->
-        <section class="landingpage">
-            <div class="content">
-                <div class="heading">
-                    
-                    <h1 style="font-size: 60px;">Freshness<br> in every bite</h1>
-                    <p><b>Light, Fluffy, and Vegan-friendly Pancakes</b></p>
-                    <a href="/search?query=pancake"><button class="main-button">View Receipe</button></a>
-                </div>
-                <div class="image">
-                    <img src="../images/main.jpg" alt="" class="img">
-                </div>
-            
+        <div class="page">
+            <div class="menu">
+                <ul>
+                    <li><a href="/"><i class="fa-solid fa-house"></i>&nbsp;<b>Home</b></a></li>
+                    <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
+                    <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
+                    <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
+                </ul>
             </div>
-        </section>
 
-        <section class="subscribe">
-            <hr>
-            <div class="small-box">
-                <img src="../images/baked-chicken-wings.jpg" alt="newsletter">
-                <div class="subscription-info">
-                    <h2>Subscribe to get our latest recipes!</h2>
-                    <p>Subscribe to get new posts in your inbox!</p>
-                    <form action="/subscribe" method="post">
-                        <div class="field">
-                            <label for="name"class="input-name-label"><b>Name:</b></label>
-                            <input type="text" class="input-name-field"name="name" placeholder="Enter your name" required><br>
+            <div class="main">
+                <!--Landing page-->
+                <section class="landingpage">
+                    <div class="content">
+                        <div class="heading">
+                            <h1 style="font-size: 60px;">Freshness<br> in every bite</h1>
+                            <p><b>Light, Fluffy, and Vegan-friendly Pancakes</b></p>
+                            <a href="/search?query=pancake"><button class="main-button">View Receipe</button></a>
                         </div>
-                        <div class="field">
-                            <label for="email" class="input-email-label"><b>Email:</b></label>
-                            <input type="email" class="input-email-field" name="email" placeholder="Enter your email" required>
+                        <div class="image">
+                            <img src="../images/main.jpg" alt="" class="img">
                         </div>
-                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
-                    </form>
-                </div>
+                    </div>
+                </section>
+                <section class="subscribe">
+                    <hr>
+                    <div class="small-box">
+                        <img src="../images/baked-chicken-wings.jpg" alt="newsletter">
+                        <div class="subscription-info">
+                            <h2>Subscribe to get our latest recipes!</h2>
+                            <p>Subscribe to get new posts in your inbox!</p>
+                            <form action="/subscribe" method="post">
+                                <div class="field">
+                                    <label for="name"class="input-name-label"><b>Name:</b></label>
+                                    <input type="text" class="input-name-field"name="name" placeholder="Enter your name" required><br>
+                                </div>
+                                <div class="field">
+                                    <label for="email" class="input-email-label"><b>Email:</b></label>
+                                    <input type="email" class="input-email-field" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        
+
+            
+        </div>
+
         <footer>
             <p>Powered by Edamam API</p>
         </footer>
