@@ -1,6 +1,6 @@
-
 .main{
     background-image: url("../images/smoothie-bowl.jpg");
+    background-size: 500px;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -8,12 +8,12 @@
     
 }
 
-h1 {
+#contactForm h1 {
     color: #FF5733;
     text-align: center;
     margin: 15px auto;
 }
-form {
+#contactForm {
     max-width: 400px;
     margin: 20px auto;
     background-color: #f4f4f4;
@@ -22,13 +22,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+#contactForm label {
     display: block;
     margin-bottom: 8px;
     color: #333;
 }
 
-input, textarea {
+#contactForm input, #contactForm textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -37,7 +37,7 @@ input, textarea {
     box-sizing: border-box;
 }
 
-button {
+#contactForm button {
     background-color: #FF5733;
     color: white;
     padding: 11px 18px;
@@ -48,7 +48,7 @@ button {
     font-size: 14px;
 }
 
-button:hover {
+#contactForm button:hover {
     background-color: #FF8C66;
 }
 
