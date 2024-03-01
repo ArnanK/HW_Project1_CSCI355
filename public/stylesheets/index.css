@@ -56,17 +56,21 @@
 }
 
 /* Image Slide*/
-.scroll h1 {
-    font-size: 36px; 
-    margin-top: 50px; 
+
+.scroll h1{
     text-align: center;
+    background: green;
+    color: white;
+    display: inline-block;
+    padding: .5rem 2rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
 }
 .scroll hr {
     width: 1000px;
     height: 3.5px; 
     background-color: #F3EFE0; 
     border: none; 
-    margin: 20px auto; 
+    margin: 5px auto; 
   
     
 }
@@ -187,6 +191,62 @@
     border: none; 
     
 }
+
+
+.heading span{
+    background: green;
+    color: white;
+    display: inline-block;
+    padding: .5rem 1rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
+}
+
+
+.review .review-slider{
+    border: 0px solid;
+    padding: 1rem;
+    
+}
+
+.review .review-slider .box{
+    border: 0px solid red;
+    background: #fff;
+    border-radius: .3rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+    
+}
+.review .review-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px green;
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p{
+    padding: 0.5rem 0;
+    line-height: 0.3;
+    color: #666;
+    font-size: 1.2rem;
+}
+.review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color: #130f40;
+    font-size: 2.2rem;
+}
+
+.review .review-slider .box .stars i{
+    
+    color: orange;
+    font-size: 1.2rem;
+}
+
 
 
 /* ------------------Mobile Navigation----------------- */

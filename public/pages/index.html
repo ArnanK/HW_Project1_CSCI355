@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../stylesheets/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     </head>
     <body>
         <nav>
@@ -58,10 +59,72 @@
                         </div>
                     </div>
                 </section>
+                <!--Review section-->
+
+                <section class="review">
+                    <h1 class="heading">Customer's <span> Review</span></h1>
+                    <div class="swiper review-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box">
+                                <img src="../images/pic-1.jpg">
+                                <p>Happiness on a Plate!</p>
+                                <h3>John Deo</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide box">
+                                <img src="../images/pic-2.jpg">
+                                <p>Loved it! followed the salmon recipe</p>
+                                <h3>Kyan Mays</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide box">
+                                <img src="../images/pic-3.jpg">
+                                <p>My go to unsweetened peanut butter recipe</p>
+                                <h3>Donald Mcguire</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide box">
+                                <img src="../images/pic-4.jpg">
+                                <p>Healthy and Delicious</p>
+                                <h3>Kayla Hopper</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </section>
+
                 <!--Image Slide-->
 
                 <section class="scroll">
-                    <h1>Popular on Breakfast</h1>
+                    <h1 class="heading">Popular on <span> Breakfast</span></h1>
                     <hr>
                     <div class="gallery-wrap">
                         <img src="../images/back.png" id="backBtn">
@@ -113,6 +176,9 @@
 
         <script src="../javascripts/searchBar.js" async defer></script>
         <script src="../javascripts/scroll.js" async defer></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="../javascripts/review.js"></script>
+        
 
     </body>
 </html>
