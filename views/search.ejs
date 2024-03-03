@@ -23,6 +23,7 @@
                     <li><a href="/about"><i class="fa-solid fa-circle-info"></i>&nbsp;<b>About</b></a></li>
                     <li><a href="/favorites"><i class="fa-solid fa-heart"></i>&nbsp;<b>Our Favorites</b></a></li>
                     <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
+                    <li><a href="/search"><i class="fa-solid fa-bars"></i>&nbsp;<b>Search Recipes</b></a></li>
                 </ul>
             </div>
             <div class="search">
@@ -76,37 +77,39 @@
                 </div>
 
                 <div class="content">
-                    <h3 class="results">Results: <%= recipes.length %> </h3>
-                    <div class="recipes">
-                        <% for(let i=0; i < recipes.length; i++){ %>
-                            <a href="<%= recipes[i].url %>" target="_blank" class="card-link">
-                                <div class="card">
-                                    <img src="<%= recipes[i].image %>" alt="<%= recipes[i].name %>">
-                                    <div class="text">
-                                        <h4><%= recipes[i].name %></h4>
-                                        <table>
-                                            <tr>
-                                                <td>Calories</td>
-                                                <td><%= Math.round(recipes[i].calories) %></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Protein</td>
-                                                <td><%= recipes[i].protein %>g</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Carbs</td>
-                                                <td><%= recipes[i].carbs %>g</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fat</td>
-                                                <td><%= recipes[i].fat %>g</td>
-                                            </tr>
-                                        </table>
+                    <% if (recipes.length > 0) { %>
+                        <h3 class="results">Results: <%= recipes.length %> </h3>
+                        <div class="recipes">
+                            <% for(let i=0; i < recipes.length; i++){ %>
+                                <a href="<%= recipes[i].url %>" target="_blank" class="card-link">
+                                    <div class="card">
+                                        <img src="<%= recipes[i].image %>" alt="<%= recipes[i].name %>">
+                                        <div class="text">
+                                            <h4><%= recipes[i].name %></h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Calories</td>
+                                                    <td><%= Math.round(recipes[i].calories) %></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Protein</td>
+                                                    <td><%= recipes[i].protein %>g</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Carbs</td>
+                                                    <td><%= recipes[i].carbs %>g</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fat</td>
+                                                    <td><%= recipes[i].fat %>g</td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        <% } %>
-                    </div>
+                                </a>
+                            <% } %>
+                        </div>
+                    <% } %>
                 </div>
             </div>
         </div>
