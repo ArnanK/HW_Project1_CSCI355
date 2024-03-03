@@ -3,10 +3,11 @@
 * {
   box-sizing: border-box;
 }
+/* --------------Expanding Cards------------- */
+
 
 .content{
   display:flex;
-  height: 100%;
   width: 100%;
   justify-content: center;
 }
@@ -16,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   overflow: hidden;
   margin: 0;
 }
@@ -34,6 +34,7 @@
   height: 80vh;
   border-radius: 50px;
   color: #fff;
+  margin-bottom: 40px;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
@@ -68,4 +69,57 @@
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+
+/*-----------------Videos-----------------*/
+
+.videos-heading, .content-card-heading{
+  text-align: center;
+ 
+}
+.videos-heading span, .content-card-heading span{
+  background: green;
+  color: white;
+  display: inline-block;
+  padding: .1rem 1rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
+  margin-top: 2px;
+}
+.videos-wrapper{
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.video{
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  transition: 0.5s ease-in-out;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+
+/* ------------------Mobile Navigation----------------- */
+@media (max-width: 1055px){
+    .img{
+        display: none;
+    }
+    .small-box img {
+        display: none;
+    }
+    .small-box .subscription-info{
+        width: 75%;
+    }
+    .subscribe hr {
+        width: 80%;
+    }
+
 }
