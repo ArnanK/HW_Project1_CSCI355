@@ -16,7 +16,7 @@
 
 
 .card{
-    height: 370px;
+    height: 400px;
     width: 270px;
     border-radius: 8px;
     border-width: 2px;
@@ -28,7 +28,7 @@
 }
 
 .card:hover{
-    height: 370px;
+    height: 400px;
     width: 270px;
     border-radius: 8px;
     border-width: 2px;

@@ -51,14 +51,29 @@
                     <h3 class="results">Results: <%= recipes.length %> </h3>
                     <div class="recipes">
                         <% for(let i=0; i < recipes.length; i++){ %>
-                            <a href="<%= recipes[i].url %>" target="_blank">
+                            <a href="<%= recipes[i].url %>" target="_blank" class="card-link">
                                 <div class="card">
-                                    <img src="<%= recipes[i].image %>" alt="">
+                                    <img src="<%= recipes[i].image %>" alt="<%= recipes[i].name %>">
                                     <div class="text">
                                         <h4><%= recipes[i].name %></h4>
-                                        <h6>Calories: <%= Math.round(recipes[i].calories) %></h6>
-                                        <h6>Nutrients:</h6>
-                                        <h6>Protein: <%= recipes[i].protein %>g&emsp;Carbs:<%= recipes[i].carbs %>g&emsp;Fat:<%= recipes[i].fat %>g</h6>
+                                        <table>
+                                            <tr>
+                                                <td>Calories</td>
+                                                <td><%= Math.round(recipes[i].calories) %></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Protein</td>
+                                                <td><%= recipes[i].protein %>g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Carbs</td>
+                                                <td><%= recipes[i].carbs %>g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fat</td>
+                                                <td><%= recipes[i].fat %>g</td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </a>
