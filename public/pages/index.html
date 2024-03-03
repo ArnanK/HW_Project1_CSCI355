@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <nav>
@@ -51,12 +52,12 @@
                 <section class="landingpage">
                     <div class="content">
                         <div class="landing-heading">
-                            <h1 style="font-size: 60px;">Freshness<br> in every bite</h1>
-                            <p><b>Light, Fluffy, and Vegan-friendly Pancakes</b></p>
+                            <h1 data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="600">Freshness<br> in every bite</h1>
+                            <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400"><b>Light, Fluffy, and Vegan-friendly Pancakes</b></p>
                             <a href="/search?query=pancake"><button class="main-button">View Receipe</button></a>
                         </div>
                         <div class="image">
-                            <img src="../images/main.jpg" alt="" class="img">
+                            <img src="../images/main.jpg" alt="" class="img" data-aos="zoom-in-left" data-aos-duration="3000">
                         </div>
                     </div>
                 </section>
@@ -216,6 +217,10 @@
         <script src="../javascripts/scroll.js" async defer></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="../javascripts/review.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         
         
 
