@@ -46,7 +46,35 @@
                     <li><a href="/contact"><i class="fa-solid fa-inbox"></i>&nbsp;<b>Contact</b></a></li>
                 </ul>
             </div>
+
             <div class="main">
+                <div class="search-bar">
+                    <form action="/search" method="GET">
+                        <label for="searchInput">Explore More Recipes</label>
+                        <input type="text" id="searchInput" class="input" name="query" placeholder="Search..." required>
+
+                        <div class="search-bar-checkbox">
+                            <label>Diet - </label>
+                            <input type="checkbox" id="high-fiber" name="diet" value="high-fiber">
+                            <label for="high-fiber">High-Fiber</label>
+                            <input type="checkbox" id="high-protein" name="diet" value="high-protein">
+                            <label for="high-fiber">High-Protein</label>
+                            <input type="checkbox" id="low-carb" name="diet" value="low-carb">
+                            <label for="high-fiber">Low-Carb</label>
+                        </div>
+                        <div class="search-bar-radio">
+                            <label>Cuisine Type - </label>
+                            <input type="radio" id="american" name="cuisineType" value="American">
+                            <label for="american">American</label>
+                            <input type="radio" id="indian" name="cuisineType" value="Indian">
+                            <label for="american">Indian</label>
+                            <input type="radio" id="mediterranean" name="cuisineType" value="Mediterranean">
+                            <label for="american">Mediterranean</label>
+                        </div>
+                        <input type="submit">
+                    </form>
+                </div>
+
                 <div class="content">
                     <h3 class="results">Results: <%= recipes.length %> </h3>
                     <div class="recipes">
@@ -84,7 +112,7 @@
         </div>
         
         <footer>
-            <p>Powered by Edamam API</p>
+            <p>Made with ❤️ by sugarcane, Arnie, Benevolent Burger, goldfish98, and ambatu</p>
         </footer>
 
         <script src="../javascripts/searchBar.js" async defer></script>
