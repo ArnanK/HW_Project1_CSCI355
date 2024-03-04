@@ -113,7 +113,8 @@
 }
 
 #backBtn,#nextBtn{
-    width: 50px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
     margin: 40px;
 }
@@ -213,8 +214,13 @@
     margin-bottom: 340px;
 }
 
+.card-hover{
+    height: 650px;
+}
+
 .card{
-    height: 100%;
+    height: 50%;
+    width: 100%;
     padding: 2rem 1rem;
     position: relative;
     display: flex;
@@ -237,7 +243,11 @@
     left: 0;
     }
 .card .info{
-    position: relative;
+    position: absolute;
+    top:15px;
+    
+    width: 90%;
+    overflow:hidden;
     z-index: 3;
     color: black;
     padding: 20px; /* Adjust padding as needed */
@@ -353,6 +363,9 @@
     }
     hr {
         width: 80%;
+    }
+    .card .info{
+        display: none;
     }
 
 }

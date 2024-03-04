@@ -36,8 +36,22 @@ nav{
     align-items: center;
     height: 70px;
     width: 100%;
-    position: sticky;
-    
+    position: fixed;
+    top:0;
+    left:0;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+nav.active{
+    background-color:#000000;
+    color: white;
+    box-shadow: 0 2px 10px rgba(134, 133, 133, 0.3);
+    height: 50px;
+}
+
+nav.active .leftNav .brand{
+    display: none;
 }
 
 .leftNav{
@@ -128,6 +142,7 @@ nav{
 /* --------------SideNavbar---------------------------- */
 .page{
     display: flex;
+    margin-top: 50px;
 }
 
 .page .menu{
@@ -140,9 +155,10 @@ nav{
     display: flex;
     visibility: visible;
     height: 100%;
+    padding-top: 20px;
     width: 20%;
     padding-right: 20px;
-    position: relative;
+    position: fixed;
     z-index: 3;
     background-color: black;
     color: white;

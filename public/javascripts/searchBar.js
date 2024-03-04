@@ -5,7 +5,15 @@ const form = document.getElementById('searchForm');
 const menu = document.querySelector('.menu')
 const menuButton = document.getElementById('menuButton')
 const main = document.querySelector('.main')
+const nav = document.querySelector('nav')
 
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > nav.offsetHeight + 150){
+        nav.classList.add('active')
+    }else{
+        nav.classList.remove('active')
+    }
+})
 
 function events_Button(){
     btn.addEventListener('mouseover', ()=>{
@@ -33,5 +41,7 @@ function events_Button(){
         }
     })
 }
+
+
 
 events_Button()

@@ -92,12 +92,12 @@
 .card{
     height: 400px;
     width: 270px;
-    border-radius: 8px;
-    border-width: 2px;
+    border-radius: 3px;
+    border-width: 1px;
     border-color: black;
     border-style: solid;
     overflow: hidden;
-    box-shadow: 1px 1px 4px 1px black;
+    
     transition: transform ease 300ms;
 }
 
