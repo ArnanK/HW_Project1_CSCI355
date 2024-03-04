@@ -52,7 +52,7 @@
 
   /* Hover effect */
 .main-button:hover {
-    background-color: #FF8C00; 
+    background-color: #dfc8a9; 
 }
 
 /* Image Slide*/
@@ -62,7 +62,7 @@
 }
 .scroll h1 span{
     
-    background: green;
+    background: #D2B48C;
     color: white;
     display: inline-block;
     padding: .3rem 1rem;
@@ -121,14 +121,6 @@
 
 
 /* ------------------SubsribeSection--------------------- */
-
-.subscribe hr {
-    width: 900px;
-    height: 3.5px; 
-    background-color: #F3EFE0; 
-    border: none; 
-    margin: 20px auto; 
-}
 
 .small-box{
     display: flex;
@@ -201,7 +193,7 @@
    
 }
 .card-heading span{
-    background: green;
+    background: #D2B48C;
     color: white;
     display: inline-block;
     padding: .1rem 1rem;
@@ -210,48 +202,31 @@
 }
 .card-wrapper{
     display: flex;
-    width: 85%;
+    width: 75%;
+    height: 50%;
     justify-content: space-around;
     margin: 0 auto;
+    margin-bottom: 340px;
 }
 
 .card{
+    height: 100%;
     padding: 2rem 1rem;
-    background: #fff;
     position: relative;
     display: flex;
     align-items: flex-end;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
-    margin-right: 20px;
-    margin-bottom: 340px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 30px;
-    
-
 }
 .card:hover{
     transform: translateY(20px);
 }
 
-.card::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 200%;
-    background: linear-gradient(to bottom,rgba(176, 129, 0, 0.201),rgba(228, 205, 175, 0.507));
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-}
-.card:hover:before{
-    opacity: 1;
-}
 .card img{
     width: 100%;
-    height: 200%;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -262,7 +237,7 @@
     z-index: 3;
     color: black;
     padding: 20px; /* Adjust padding as needed */
-    background-color: rgba(146, 176, 48, 0.751); 
+    background-color: #D2B48C; 
     opacity: 0;
     transform: translateY(0px);
     transition: 0.5s all;
@@ -303,20 +278,18 @@
     text-align: center;
 }
 .review-heading span{
-    background: green;
+    background: #000;
     color: white;
     display: inline-block;
     padding: .5rem 1rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
-    
-
 }
 
 
 .review .review-slider{
     border: 0px solid;
     padding: 1rem;
-    
+    width: 70%;
 }
 
 .review .review-slider .box{
@@ -332,7 +305,7 @@
     
 }
 .review .review-slider .box:hover{
-    box-shadow: 1px 1px 10px 4px green;
+    box-shadow: 1px 1px 10px 4px #D2B48C;
 }
 .review .review-slider .box img{
     height: 10rem;
@@ -359,6 +332,9 @@
 }
 
 
+.swiper-wrapper{
+    width: 60%;
+}
 
 /* ------------------Mobile Navigation----------------- */
 @media (max-width: 1055px){
@@ -371,9 +347,15 @@
     .small-box .subscription-info{
         width: 75%;
     }
-    .subscribe hr {
+    hr {
         width: 80%;
     }
 
 }
 
+@media (max-width: 1335){
+    .card{
+        height: 100px;
+    }
+
+}

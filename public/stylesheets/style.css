@@ -167,6 +167,17 @@ nav{
     color: inherit;
     text-decoration: none;
 }
+/* ------------------Other Features--------------------------- */
+hr {
+    width: 900px;
+    height: 3.5px; 
+    background-color: #F3EFE0; 
+    border: none; 
+    margin: 20px auto; 
+}
+
+
+
 
 
 /* ------------------Footer--------------------------- */
@@ -187,6 +198,7 @@ footer{
     nav .brand{
         display: none;
     }
+    
 }
 
 @media (max-width: 830px){
