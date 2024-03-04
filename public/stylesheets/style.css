@@ -5,6 +5,7 @@
 }
 html{
     height: 100vh;
+    
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     height: inherit;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* -----------------Root------------------------------- */
@@ -37,10 +39,8 @@ nav{
     height: 70px;
     width: 100%;
     position: fixed;
-    top:0;
-    left:0;
+    z-index: 3;
     transition: all .3s ease-in-out;
-    z-index: 10;
 }
 
 nav.active{
@@ -143,6 +143,7 @@ nav.active .leftNav .brand{
 .page{
     display: flex;
     margin-top: 50px;
+    width: 100%;
 }
 
 .page .menu{
@@ -167,7 +168,7 @@ nav.active .leftNav .brand{
 .page .main{
     height: 100%;
     width: 100%;
-    position: relative;
+    
     z-index: 1;
 }
 
