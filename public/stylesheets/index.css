@@ -303,7 +303,7 @@
 .review .review-slider{
     border: 0px solid;
     padding: 1rem;
-    width: 70%;
+    width: 80%;
 }
 
 .review .review-slider .box{
@@ -328,8 +328,8 @@
 }
 
 .review .review-slider .box p{
-    padding: 0.5rem 0;
-    line-height: 0.3;
+    padding: 0.7rem 0;
+    line-height: 0.8;
     color: #666;
     font-size: 1.2rem;
 }
