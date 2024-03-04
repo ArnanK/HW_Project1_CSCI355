@@ -1,6 +1,6 @@
 
 /* ------------------Homepage-------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Riot&family=Space+Grotesk:wght@300..700&display=swap');
 .landingpage{
     background: linear-gradient(to bottom right, #F3EFE0 50%, transparent 50%);
     background-size: contain;
@@ -20,6 +20,10 @@
 }
 .landingpage.content.landing-heading{
     width: 100%;
+}
+.landing-heading h1{
+    font-size: 60px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 
