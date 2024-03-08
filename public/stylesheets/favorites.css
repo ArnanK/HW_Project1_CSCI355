@@ -77,14 +77,7 @@
   text-align: center;
  
 }
-.videos-heading span, .content-card-heading span{
-  background: green;
-  color: white;
-  display: inline-block;
-  padding: .1rem 1rem;
-  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
-  margin-top: 2px;
-}
+
 .videos-wrapper{
   display: flex;
   width: 85%;
