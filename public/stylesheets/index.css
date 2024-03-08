@@ -97,7 +97,7 @@
 }
 .horizontal-scroll div img{
     width: 100%;
-     
+    height: 100%;
     transition: transform 0.5s;
     
 }
@@ -374,9 +374,18 @@
 
 }
 
-@media (max-width: 1335){
+@media (max-width: 1335px){
     .card{
         height: 100px;
     }
 
+}
+
+@media (max-width: 800px){
+    .horizontal-scroll div img{
+        width: 250px;
+        height: 100%;
+        transition: transform 0.5s;
+        
+    }
 }

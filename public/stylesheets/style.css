@@ -39,7 +39,7 @@ nav{
     height: 70px;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 7;
     transition: all .3s ease-in-out;
 }
 
@@ -48,6 +48,20 @@ nav.active{
     color: white;
     box-shadow: 0 2px 10px rgba(134, 133, 133, 0.3);
     height: 50px;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
 }
 
 nav.active .leftNav .brand{
@@ -66,13 +80,7 @@ nav.active .leftNav .brand{
     margin-left: 10px;
 }
 
-.leftNav .brand img {
-    width: 150px; 
-    height: auto; 
-    display: block; 
-    margin-left: 80px;
-    flex-shrink: 1;
-}
+
 .leftNav>ul{ 
     display: flex;
     flex-shrink: 2;
@@ -204,21 +212,27 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px;
+    height: 190px;
     width: 100%;
     position: relative; 
     bottom: 0px; 
 }
 
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text hr{
+    margin: 0;
+}
 /* ------------------Mobile Responsive----------------- */
 @media (max-width: 1010px){
     nav .brand{
         display: none;
     }
-    
-}
-
-@media (max-width: 830px){
     #menuButton{
         visibility: visible;
         display: flex;
@@ -229,5 +243,5 @@ footer{
     .leftNav>ul{ 
         display: none;
     }
-
 }
+
