@@ -24,7 +24,7 @@ Node.js
 
 ### To install dependencies, run the following commands:
 ```bash
-npm install or npm i
+npm install
 ```
 ## Environment Variables
 
