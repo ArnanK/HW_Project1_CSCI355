@@ -45,24 +45,36 @@
                 </ul>
             </div>
             <div class="main">
+
+
                 
-                <form action="#" method="post" id="contactForm">
-                    <h1>Contact Us</h1>
+                <div class="contact-container">
+                    <form action="#" method="post" id="contactForm" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Contact Us</h2>
+                            <hr>
+                        </div>
 
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="contact-inputs" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="contact-inputs" required>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="button-container">
+                            <button class="button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <div class="contact-right">
+                        <img src="../images/pasta.jpg" alt="">
+                    </div>
+                </div>
 
-                    <button type="submit">Submit</button> 
-                </form>
+                
+
             </div>
         </div>
         
