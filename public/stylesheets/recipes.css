@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff; 
+    background-color: #F3EFE0; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-radius: 8px; 
+    border-radius: 2px; 
     margin: 20px auto; 
     width: 80%; 
     max-width: 600px; 
+    margin-top: 45px;
 }
 
 .search-bar label[for="searchInput"] {
@@ -21,13 +22,13 @@
     padding: 10px 15px; 
     margin: 5px 0; 
     border: none;
-    border-radius: 20px; 
+    border-radius: 2px; 
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); 
     font-size: 16px; 
 }
 
 .search-bar input[type="submit"] {
-    background-color: #D2B48C; 
+    background-color: black; 
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: bold;
@@ -37,7 +38,7 @@
 }
 
 .search-bar input[type="submit"]:hover {
-    background-color: #FF8C00; 
+    opacity: 70%; 
 }
 
 .search-bar label {

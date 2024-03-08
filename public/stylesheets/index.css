@@ -45,7 +45,7 @@
     padding: 7px 10px;
     font-size: 24px;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color:#D2B48C; 
     color: white;
     text-align: center;
@@ -191,6 +191,10 @@
     height: 40px; 
     border: none; 
     
+}
+
+.subscribe-button:hover {
+    opacity: 70%;
 }
 /*-----------------CardHoverEffect-----------------*/
 .card-heading{
