@@ -7,7 +7,6 @@ This project utilizes the Edaman API and provides healthy recipes for users. Thi
 ## Requirements
 ```
 Node.js
-
 ```
 ## Dependencies
 
