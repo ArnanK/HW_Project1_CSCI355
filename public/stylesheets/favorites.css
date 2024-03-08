@@ -20,7 +20,9 @@
   overflow: hidden;
   margin: 0;
 }
-
+.content-card-heading{
+  margin-top: 50px;
+}
 .container {
   display: flex;
   width: 90vw;
