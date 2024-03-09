@@ -155,6 +155,7 @@ nav.active .leftNav .brand{
 }
 
 .page .menu{
+    visibility: hidden;
     width: 0px;
     transition: width 0.3s ease-in-out;
     background-color: black;
