@@ -63,10 +63,17 @@
     color: #a9a9a9;
 }
 
+
 .button-container{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.button-container button:hover {
+    opacity: 70%;
+}
+.button-container button:focus {
+    outline: none;
 }
 .button{
     padding: 15px 30px;
@@ -77,12 +84,26 @@
     border-radius: 2px;
     background: #000000;
     cursor: pointer;
+    margin: 5px 0;
+    overflow: hidden;
+    position: relative;
+}
+.circle{
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
 }
 
-
-.contact-left button:hover {
-    opacity: 70%;
-}
 
 .contact-right{
     margin-left: -10px;
@@ -102,6 +123,4 @@
         display: none;
     }
 }
-
-
 
