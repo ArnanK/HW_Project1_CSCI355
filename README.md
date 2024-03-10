@@ -3,6 +3,14 @@
 
 This project utilizes the Edaman API and provides healthy recipes for users. This project features a modern design and easy navigation for users to interact with.
 
+## Authors
+
+- [@Aviv Cohen](https://github.com/acohen31)
+- [@Arnan Khan](https://github.com/ArnanK)
+- [@Ishrat Amin](https://github.com/Ishrat24)
+- [@Mohammed Zian Hassan](https://github.com/sugarcane1001)
+- [@Eric Yang](https://github.com/BenevolentBurger)
+
 
 ## Requirements
 ```
@@ -85,15 +93,3 @@ Start the server
 ## Demo
 
 ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmg2djZ1cjJod2xvdTI0NzM4N3p3c2dvaWxwbGpxYjlwbnI4cmMxdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o6Bo8F03SQe65iuJ2D/giphy.gif)
-
-
-
-
-## Authors
-
-- [@Aviv Cohen](https://github.com/acohen31)
-- [@Arnan Khan](https://github.com/ArnanK)
-- [@Ishrat Amin](https://github.com/Ishrat24)
-- [@Mohammed Zian Hassan](https://github.com/sugarcane1001)
-- [@Eric Yang](https://github.com/BenevolentBurger)
-
